@@ -11,7 +11,7 @@ Artisan::command('inspire', function () {
 Schedule::command('digest:send')->everyTenMinutes()->description('Send error digests');
 
 // Process the queue every minute in a short-lived worker; ideal for shared hosting
-Schedule::command('queue:work --stop-when-empty --sleep=3 --tries=3')
+Schedule::command('queue:work --stop-when-empty --sleep=3 --queue webhooks')
     ->everyMinute()
     ->withoutOverlapping()
     ->description('Process queued jobs');
