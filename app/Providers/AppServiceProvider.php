@@ -6,6 +6,7 @@ use Illuminate\Support\Facades\Vite;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Support\Facades\RateLimiter;
+use Illuminate\Support\Facades\Schema;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -29,5 +30,10 @@ class AppServiceProvider extends ServiceProvider
         RateLimiter::for('webhooks', function () use ($limit) {
             return Limit::perMinute($limit)->by('webhooks');
         });
+
+        // For older MySQL/MariaDB on shared hosting, restrict default string length
+        // so unique indexes on utf8mb4 columns (e.g., users.email) do not exceed index
+        // byte limits (767/1000 bytes depending on engine/version).
+        Schema::defaultStringLength(191);
     }
 }
