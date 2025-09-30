@@ -84,7 +84,7 @@ class Apartment extends Model
     /** Apartments not available for selection (sold, reserved, unavailable, let) */
     public function scopeUnavailable(Builder $query): Builder
     {
-        return $query->whereIn('availability', ['sold', 'reserved', 'unavailable', 'let']);
+        return $query->whereIn('availability', ['sold', 'reserved', 'unavailable', 'let', 'hold']);
     }
 
     /** Constrain apartments to a given building via floor relationship */
