@@ -8,27 +8,6 @@ use Inertia\Inertia;
 // Simple API endpoint for the front-end to fetch availability snapshot by rooms filter
 Route::get('/availability', [AvailabilityController::class, 'index'])->name('apartments.availability');
 
-// UTILITY ROUTES:
-Route::get('optimize', function() {
-    \Artisan::call('optimize:clear');
-    return('All clear!');
-});
-
-Route::get('config-cache', function() {
-    \Artisan::call('config:cache');
-    return('Config cahced!');
-});
-
-Route::get('storage-link', function() {
-    \Artisan::call('storage:link');
-    return('Link created!');
-});
-
-Route::get('migrate', function() {
-    \Artisan::call('migrate', array('--path' => 'database/migrations', '--force' => true));
-    return('Migration should be complete!');
-});
-
 require __DIR__.'/auth.php';
 
 // Secure the entire site behind login and route pages to invokable controllers
