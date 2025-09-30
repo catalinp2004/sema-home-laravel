@@ -107,7 +107,8 @@ class SyncApartmentFromVaunt implements ShouldQueue
 
         // Sanitize enums to avoid DB enum constraint violations
         $builtState = $this->safeEnum($data['built_state'] ?? null, ['under_construction', 'project', 'finished', 'coming_soon'], 'under_construction', 'built_state');
-        $availability = $this->safeEnum($data['availability'] ?? null, ['available', 'unavailable', 'sold', 'let', 'reserved'], 'available', 'availability');
+        // Accept new provider value 'hold' as a valid availability
+        $availability = $this->safeEnum($data['availability'] ?? null, ['available', 'unavailable', 'sold', 'let', 'reserved', 'hold'], 'available', 'availability');
         $homeType = $this->safeEnum($data['home_type'] ?? null, ['apartment', 'studio', '1bedroom', 'penthouse', 'duplex'], 'apartment', 'home_type');
         $kitchenType = $this->safeEnum($data['kitchen_type'] ?? null, ['opened', 'closed'], null, 'kitchen_type');
 
