@@ -4,7 +4,7 @@
     <div class="smooth-wrapper" ref="smootherWrapper">
         <div class="smooth-content">
             <slot />
-            <FooterForm />
+            <FooterForm v-if="!route().current('contact')" />
             <Footer />
         </div>
     </div>

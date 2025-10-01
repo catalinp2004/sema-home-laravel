@@ -33,4 +33,4 @@ createInertiaApp({
 });
 
 // Import Bootstrap JS (requires Popper which is installed). This enables Bootstrap components like modals, dropdowns, tooltips.
-// import 'bootstrap';
+import 'bootstrap';

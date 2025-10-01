@@ -1,6 +1,6 @@
 <template>
     <footer class="d-flex flex-column align-items-center pad-top pad-bottom">
-        <div class="d-flex flex-column flex-md-row align-items-center mb-4 text-black">
+        <div class="d-flex flex-column flex-lg-row align-items-center mb-4 text-black">
             <a href="https://anpc.ro/" target="_blank" rel="noopener noreferrer" class="mx-4 text-black"><small>ANPC</small></a>
             <Link :href="route('cookies')" class="mx-4 text-black"><small>Politică de cookie-uri</small></Link>
             <Link :href="route('privacy')" class="mx-4 text-black"><small>Politică de confidențialitate</small></Link>
