@@ -8,12 +8,18 @@
             <Footer />
         </div>
     </div>
+    <div class="d-flex flex-column align-items-center bg-light pt-4 justify-content-sm-center pt-sm-0 d-lg-none position-fixed mobile-guard">
+        <ApplicationLogo class="d-inline-block" />
+        <p class="text-center fs-6 mt-5 mb-0">Mobile layout under development.</p>
+        <p class="fs-6">Check back soon.</p>
+    </div>
 </template>
 
 <script setup>
 import Nav from './components/Nav.vue';
 import FooterForm from './components/FooterForm.vue';
 import Footer from './components/Footer.vue';
+import ApplicationLogo from '@/Components/ApplicationLogo.vue';
 
 import { ref, onMounted, onBeforeUnmount } from 'vue';
 import { useGsap } from '@/composables/useGsap';
@@ -57,4 +63,5 @@ onBeforeUnmount(() => {
 
 <style scoped>
 .smooth-content { padding-top: 97px; }
+.mobile-guard { width: 100vw; height: 100vh; z-index: 999999; }
 </style>

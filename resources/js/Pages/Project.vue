@@ -172,7 +172,7 @@
                         <p><strong>Există numeroase opțiuni de shopping și entertainment, dar și educație și sănătate.</strong></p>
                     </div>
                     <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-1">
-                        <p class="mb-5">Amplasarea strategică a proiectului permite accesul facil la 2 magistrale de metrou (M1 si M3), precum și posibilitatea de a ajunge cu ușurință în trei direcții importante ale orașului: spre centru (Piața Victoriei și Piața Unirii), spre zona de nord a orașului (prin Șoseaua Virtuții)și spre Militari (ieșind direct în Bulevardul Iuliu Maniu).</p>
+                        <p class="mb-5">Amplasarea strategică a proiectului permite accesul facil la 2 magistrale de metrou (M1 si M3), precum și posibilitatea de a ajunge cu ușurință în trei direcții importante ale orașului: spre centru (Piața Victoriei și Piața Unirii), spre zona de nord a orașului (prin Șoseaua Virtuții) și spre Militari (ieșind direct în Bulevardul Iuliu Maniu).</p>
                         <Link :href="route('location')" class="btn btn-icon btn-teal d-inline-flex align-items-center tk-obvia snipped" alt="">
                             <img src="/images/icon_location.svg" class="img-fluid" alt="">
                             <span class="text-nowrap">Vezi localizare</span>
