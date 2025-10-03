@@ -11,7 +11,8 @@
                 /images/hero_about-1920.webp 1920w,
                 /images/hero_about-2560.webp 2560w"
             sizes="100vw"
-            alt="Describe the image"
+            alt="Sema Home interior rendering"
+            class="w-100 h-auto"
         />
         <div class="large-pad pt-5">
             <div class="limited-container">
@@ -19,12 +20,12 @@
                     <div class="col-2 col-lg-1 d-flex justify-content-start">
                         <TitleDecoration />
                     </div>
-                    <div class="col-10 col-sm-7 col-lg-5">
-                        <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Primul proiect rezidențial <br class="d-none d-lg-inline" />parte integrantă din <span class="text-teal"><br>Sema Parc</span></h2>
+                    <div class="col-10 col-md-9 col-lg-5 mb-4 mb-lg-0">
+                        <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Primul proiect rezidențial <br class="d-none d-xl-inline" />parte integrantă din <span class="text-teal"><br class="d-none d-xl-inline" />Sema Parc</span></h2>
                         <p>Totul a pornit dintr-o viziune: transformarea fostei platforme industriale Semănătoarea într-un reper al Bucureștiului modern. Masterplanul Sema Parc conturează un ansamblu urban complex, ce reunește componente deja realizate sau aflate în dezvoltare — clădiri de birouri clasa A, locuințe moderne, restaurante, supermarket și zone de entertainment — alături de funcțiuni ce vor fi adăugate în etapele viitoare: zone de promenadă, spații de retail, terase, hotel, precum și facilități administrative și educaționale. Un ansamblu conceput să îmbine dinamica vieții urbane cu liniștea și confortul pe care le meriți.</p>
                         <p>Sema Home este primul proiect rezidențial al Sema Real Estate și va fi realizat în mai multe faze, fiecare etapă având o dezvoltare progresivă și un impact semnificativ asupra comunității locale.</p>
                     </div>
-                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-0">
+                    <div class="col-12 col-sm-10 offset-sm-2 col-md-9 offset-md-2 col-lg-5 offset-lg-0">
                         <img
                             src="/images/sema_home_interior_courtyard-737.webp"
                             srcset="
@@ -38,16 +39,16 @@
                 </div>
                 <div class="row margin-bottom-large" data-speed="1.1">
                     <div class="col-lg-10 offset-lg-1">
-                        <div class="bg-dark-blue snipped p-5">
+                        <div class="bg-dark-blue snipped px-4 py-5 px-md-5">
                             <h2 class="mb-5 tk-obvia fs-2">Sema Home – Faza 1</h2>
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="row">
-                                        <div class="col-sm-6 px-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
+                                        <div class="col-sm-6 px-lg-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
                                             <p class="text-xl d-block mb-0 tk-obvia fw-semibold">301</p>
                                             <p class="text-l tk-obvia mb-0 fw-semibold">Apartamente cu<br>1/2/3/4 camere</p>
                                         </div>
-                                        <div class="col-sm-6 px-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
+                                        <div class="col-sm-6 px-lg-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
                                             <p class="text-xl d-block mb-0 tk-obvia fw-semibold">390</p>
                                             <p class="text-l tk-obvia mb-0 fw-semibold">Locuri de parcare</p>
                                         </div>
@@ -55,7 +56,7 @@
                                 </div>
                                 <div class="col-xl-5 offset-xl-1">
                                     <div class="row">
-                                        <div class="col-sm-6 d-flex flex-column align-items-start px-5 pe-sm-0 ps-xl-0 mb-5">
+                                        <div class="col-sm-6 d-flex flex-column align-items-start px-lg-5 pe-sm-0 ps-xl-0 mb-5">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_green_spaces.svg" class="img-fluid me-3" alt="">
                                                 <span class="text-nowrap tk-obvia fw-semibold">Spații verzi și<br> locuri de joacă</span>
@@ -65,7 +66,7 @@
                                                 <span class="text-nowrap tk-obvia fw-semibold">Tehnologii<br> avansate</span>
                                             </div>
                                         </div>
-                                        <div class="col-sm-6 d-flex flex-column align-items-start px-5 pe-sm-0 ps-xl-0">
+                                        <div class="col-sm-6 d-flex flex-column align-items-start px-lg-5 pe-sm-0 ps-xl-0">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_fabrics.svg" class="img-fluid me-3" alt="">
                                                 <span class="text-nowrap tk-obvia fw-semibold">Materiale la cele<br> mai înalte standarde</span>
@@ -83,18 +84,18 @@
                 </div>
 
                 <div class="row bg-beige py-5 py-lg-0 margin-bottom-large">
-                    <div class="col-lg-6 col-xl-5 offset-xl-1 col-arhitectura">
-                        <div class="d-flex justify-content-between flex-row align-items-center flex-md-row flex-lg-column align-items-lg-start">
-                            <TitleDecoration class="start-0" />
-                            <h2 class="mb-5 tk-obvia fw-normal">Arhitectură</h2>
-                            <div>
-                                <img src="/images/excellency_stamp.svg" class="img-fluid margin-bottom ms-auto me-auto me-sm-5 ms-lg-0 me-lg-0 logo-breeam" alt="Breeam Excellency">
-                                <img src="/images/logo_nzeb.svg" class="img-fluid margin-bottom ms-3 logo-nzeb" alt="Near Zero Energy Building">
+                    <div class="col-10 offset-1 col-md-9 offset-md-2 col-lg-5 offset-lg-1 col-arhitectura">
+                        <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center flex-lg-column align-items-lg-start ps-3 ps-sm-2 ps-md-0">
+                            <TitleDecoration class="start-0 arch-title-decoration" />
+                            <h2 class="mb-4 mb-md-5 tk-obvia fw-normal">Arhitectură</h2>
+                            <div class="ms-0 ms-md-auto ms-lg-0">
+                                <img src="/images/excellency_stamp.svg" class="img-fluid margin-bottom me-4 me-sm-5 logo-breeam" alt="Breeam Excellency">
+                                <img src="/images/logo_nzeb.svg" class="img-fluid margin-bottom logo-nzeb" alt="Near Zero Energy Building">
                             </div>
                         </div>
-                        <p class="position-relative z-2">Un concept arhitectural elegant, la un standard <strong>upper-medium</strong>, unde locuința devine un spațiu al relaxării, al liniștii și al intimității, oferind tot confortul și siguranța de care ai nevoie.</p>
-                        <p class="position-relative z-2">Proiectarea se va realiza folosind standardul NZEB, “net zero energy building”, clădiri cu un consum de energie aproape de zero.</p>
-                        <p class="mb-0 position-relative z-2">Prin soluții constructive cuprinse încă din faza de proiectare, clădirea a obținut deja certificare BREEAM Excellent din fază de proiect.</p>
+                        <p class="ps-3 ps-sm-2 ps-md-0">Un concept arhitectural elegant, la un standard <strong>upper-medium</strong>, unde locuința devine un spațiu al relaxării, al liniștii și al intimității, oferind tot confortul și siguranța de care ai nevoie.</p>
+                        <p class="ps-3 ps-sm-2 ps-md-0">Proiectarea se va realiza folosind standardul NZEB, “net zero energy building”, clădiri cu un consum de energie aproape de zero.</p>
+                        <p class="ps-3 ps-sm-2 ps-md-0 mb-0">Prin soluții constructive cuprinse încă din faza de proiectare, clădirea a obținut deja certificare BREEAM Excellent din fază de proiect.</p>
                     </div>
                     <div class="col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-6 offset-lg-0 col-xxl-5 offset-xxl-1">
                         <div class="slider-about">
@@ -138,10 +139,10 @@
                     <div class="col-2 col-lg-1 d-flex justify-content-start">
                         <TitleDecoration />
                     </div>
-                    <div class="col-lg-10">
-                        <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Design și finisaje <br class="d-none d-lg-inline" /><span class="text-teal">premium</span></h2>
+                    <div class="col-10 offset-2 col-md-9 offset-md-2 col-lg-10 offset-lg-0">
+                        <h2 class="mb-3 mb-sm-4 mb-lg-5 tk-obvia">Design și finisaje <br class="d-none d-lg-inline" /><span class="text-teal">premium</span></h2>
                     </div>
-                    <div class="col-10 offset-lg-1 col-sm-7 col-lg-5">
+                    <div class="col-10 offset-2 col-md-9 offset-md-2 col-lg-5 offset-lg-1 mb-5 mb-lg-0">
                         <img
                             src="/images/render_living-737.webp"
                             srcset="
@@ -152,7 +153,7 @@
                             class="img-fluid snipped"
                         />
                     </div>
-                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-0">
+                    <div class="col-12 col-sm-10 offset-sm-2 col-md-9 offset-md-2 col-lg-5 offset-lg-0">
                         <ul class="ap-details-list">
                             <li>Suprafață generoasă, cu până la 20% mai mult spațiu locuibil decât media pieței</li>
                             <li>Două sau mai multe variante de compartimentare pentru fiecare tip de apartament</li>
@@ -164,14 +165,14 @@
                 </div>
 
                 <div class="row gx-5 mt-xl-5 margin-bottom-large">
-                    <div class="col-2 col-lg-1 d-flex justify-content-start position-relative">
+                    <div class="col-2 col-lg-1 d-flex justify-content-start poi-title-decoration-col">
                         <TitleDecoration />
                     </div>
-                    <div class="col-lg-4">
+                    <div class="col-10 offset-2 offset-md-2 col-lg-4 offset-lg-0">
                         <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Puncte de <br class="d-none d-lg-inline" /><span class="text-teal">interes</span></h2>
                         <p><strong>Există numeroase opțiuni de shopping și entertainment, dar și educație și sănătate.</strong></p>
                     </div>
-                    <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-1">
+                    <div class="col-10 offset-2 col-md-10 offset-md-1 col-md-8 offset-md-2 col-lg-5 offset-lg-1">
                         <p class="mb-5">Amplasarea strategică a proiectului permite accesul facil la 2 magistrale de metrou (M1 si M3), precum și posibilitatea de a ajunge cu ușurință în trei direcții importante ale orașului: spre centru (Piața Victoriei și Piața Unirii), spre zona de nord a orașului (prin Șoseaua Virtuții) și spre Militari (ieșind direct în Bulevardul Iuliu Maniu).</p>
                         <Link :href="route('location')" class="btn btn-icon btn-teal d-inline-flex align-items-center tk-obvia snipped" alt="">
                             <img src="/images/icon_location.svg" class="img-fluid" alt="">
@@ -282,16 +283,13 @@ register();
     transform: translateY(100%) rotate(90deg);
 }
 
+.poi-title-decoration-col {
+    position: relative;
+}
+
 @media (max-width: 1399px) {
     .slider-about .swiper {
-        /* width: calc(100% + 1rem); */
-        /* height: 100%; */
-        /* position: absolute; */
-        /* top: 0; */
-        /* right: 0; */
         padding-left: 1.5rem;
-        /* padding-right: 0; */
-        /* margin-right: 0; */
     }
 }
 
@@ -301,6 +299,15 @@ register();
         padding-bottom: 0;
     }
 
+    .arch-title-decoration {
+        top: 5rem;
+    }
+
+    .logo-breeam,
+    .logo-nzeb {
+        max-height: 90px;
+    }
+    
     .slider-about {
         height: 60vh;
         top: 0;
@@ -308,24 +315,29 @@ register();
     }
 
     .slider-about .swiper {
-        /* width: calc(100% + 1rem); */
-        /* height: 100%; */
-        /* position: absolute; */
-        /* top: 0; */
-        /* right: 0; */
         padding-left: 3rem;
         padding-right: 3rem;
-        /* margin-right: 0; */
     }
 
     .slider-about .swiper-pagination-bullets {
         left: 1rem;
     }
+    
+    .poi-title-decoration-col {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+    .arch-title-decoration {
+        top: auto;
+    }
 }
 
 @media (max-width: 575px) {
-    .logo-breeam {
-        max-width: 130px;
+    .logo-breeam,
+    .logo-nzeb {
+        max-height: 80px;
     }
 }
 </style>

@@ -20,7 +20,7 @@
                     </div>
                 </div>
                 <div class="row gx-5 mb-5">
-                    <div class="col-10 offset-2 col-lg-5 offset-lg-1 mb-5 mb-xl-0 d-flex flex-column align-items-start">
+                    <div class="col-10 offset-2 col-lg-5 offset-lg-1 mb-3 mb-md-5 mb-xl-0 d-flex flex-column align-items-start">
                         <h3 class="text-l mb-4 mb-md-5">
                             <span class="d-block mb-2">Trăiește dincolo de așteptări.</span>
                             <span class="d-block">Alegerea firească în orașul tău</span>
@@ -46,16 +46,16 @@
                     </div>
                     
                 </div>
-                <div class="bg-dark-blue snipped position-relative">
+                <div class="bg-dark-blue snipped position-relative margin-bottom-large pb-5">
                     <div class="row gx-5">
-                        <div class="col-xl-5 offset-xl-1 mt-5 px-5 px-xl-0">
+                        <div class="col-xl-5 offset-xl-1 mt-md-3 mt-lg-5 px-5 px-xl-0">
                             <h2 class="my-5 tk-obvia">Sema Home<br> Faza 1</h2>
                             <p class="my-5">Prima fază a proiectului aduce un imobil modern cu regim 2SP11, ce va găzdui 301 apartamente și 390 de locuri de parcare. Toate locuințele sunt gândite pentru confortul de zi cu zi, oferind spații de depozitare, design contemporan și un nivel ridicat de eficiență energetică.</p>
                             <p class="mb-5">Tipologiile sunt variate - de la apartamente practice cu o cameră, la apartamente cu 2, 3 sau 4 camere – pentru a răspunde perfect fiecărui stil de viață. Fiecare unitate este dotată cu tehnologii inteligente, iar materialele folosite vor respecta cele mai înalte standarde de calitate și sustenabilitate</p>
-                            <p class="mb-5">Locatarii vor avea acces la facilități comune de înaltă calitate, inclusiv spații verzi și zone de relaxare, precum și la zonele de alimentație publică și servicii din cadrul Sema Parc.</p>
+                            <p class="mb-3 mb-lg-4">Locatarii vor avea acces la facilități comune de înaltă calitate, inclusiv spații verzi și zone de relaxare, precum și la zonele de alimentație publică și servicii din cadrul Sema Parc.</p>
                         </div>
                     </div>
-                    <div class="row mb-5">
+                    <div class="row">
                         <div class="col-xl-10 offset-xl-1 mt-5">
                             <div class="row">
                                 <div class="col-xl-6">
@@ -70,7 +70,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-5 offset-xl-1">
+                                <div class="col-xl-5 offset-xl-1 mb-5 mb-sm-0 mb-lg-4 mb-xl-5">
                                     <div class="row">
                                         <div class="col-sm-6 d-flex flex-column align-items-start px-5 pe-sm-0 ps-xl-0 mb-5">
                                             <div class="d-flex align-items-center mb-5">
@@ -96,16 +96,16 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-10 offset-1 d-flex justify-content-center align-items-center my-5">
+                        <div class="col-10 offset-1 d-flex justify-content-center align-items-center">
                             <Link :href="route('project')" class="btn btn-arrow btn-teal d-flex align-items-center tk-obvia snipped">Vezi detalii</Link>
                         </div>
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-2 col-lg-1 d-flex justify-content-start mt-xl-5">
+                    <div class="col-2 col-lg-1 d-flex justify-content-start">
                         <TitleDecoration />
                     </div>
-                    <div class="col-10 col-lg-6 col-xl-5 mt-xl-5 mb-5 d-flex flex-column align-items-start">
+                    <div class="col-10 col-lg-6 col-xl-5 mb-5 d-flex flex-column align-items-start">
                         <h2 class="mb-4 mb-lg-5 tk-obvia text-teal"><span class="text-black">Sema Home<br></span> Faza 2</h2>
                         <p class="mb-4 mb-lg-5">Proiectul va continua cu construcția a încă doua blocuri 2SP11, completand proiectul cu alte 394 de apartamente si 516 locuri de parcare. Această etapă va aduce un plus de diversitate în tipologia locuințelor îmbunătățind infrastructura zonei.</p>
                         <p class="mb-5">Se va pune un accent deosebit pe integrarea armonioasă a noilor clădiri în peisajul existent al parcului existent, oferind un mediu plăcut și funcțional atât pentru cei care locuiesc acolo, cât și pentru cei care lucrează în apropiere.</p>
@@ -204,4 +204,126 @@ register();
 </script>
 
 <style scoped>
+.slider-home {
+    width: 100%;
+    max-width: 1700px;
+}
+
+.slider-home .swiper {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+}
+
+.slider-home .swiper-slide {
+    transform: translateZ(0) scale(.6) !important;
+    transition: all 0.3s ease-in-out;
+    height: 23vw;
+    max-height: 390px;
+    overflow: hidden;
+}
+
+.slider-home .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.slider-home .swiper-slide-active {
+    transform: translateZ(0) scale(.6) translateX(-33.33%) !important;
+}
+
+.slider-home .swiper-slide-next  {
+    transform: translateZ(0) scale(.8) translateX(-48.5%)  !important;
+}
+
+.slider-home .swiper-slide-next + .swiper-slide {
+    transform: translateZ(0) scale(1) translateX(-21.5%) !important;
+    width: 35% !important;
+}
+
+.slider-home .swiper-slide-next + .swiper-slide + .swiper-slide {
+    transform: translateZ(0) scale(.8) translateX(-45%)  !important;
+}
+
+.slider-home .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide {
+    transform: translateZ(0) scale(.6) translateX(-92%) !important;
+}
+
+.slider-home .swiper-button-prev {
+    left: calc(50% - 3rem);
+}
+
+.slider-home .swiper-button-next {
+    right: calc(50% - 3rem);
+}
+
+.slider-home .swiper-horizontal>.swiper-pagination-bullets,
+.slider-home .swiper-pagination-bullets.swiper-pagination-horizontal,
+.slider-home .swiper-pagination-custom,
+.slider-home .swiper-pagination-fraction {
+    bottom: auto;
+    top: 1.25rem;
+}
+
+@media (max-width: 991px) {
+    .slider-home .swiper-slide {
+        transform: translateZ(0) scale(.8) !important;
+    }
+    .slider-home .swiper-slide-active {
+        transform: translateZ(0) scale(.8) translateX(-12.4%) !important;
+    }
+
+    .slider-home .swiper-slide-next  {
+        transform: translateZ(0) scale(1) translateX(-8%)  !important;
+        width: 40% !important;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide {
+        transform: translateZ(0) scale(.8) translateX(-12.4%) !important;
+        width: 33.33% !important;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide + .swiper-slide {
+        transform: translateZ(0) scale(.8) translateX(0)  !important;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide {
+        transform: translateZ(0) scale(.8) translateX(0) !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .slider-home .swiper-slide {
+        transform: translateZ(0) scale(.9) !important;
+        height: auto;
+        max-height: none;
+    }
+    .slider-home .swiper-slide-prev {
+        transform: translateZ(0) scale(.9) translateX(12.5%) !important;
+    }
+
+    .slider-home .swiper-slide-active {
+        transform: translateZ(0) scale(1) translateX(12.5%) !important;
+        width: 80% !important;
+    }
+
+    .slider-home .swiper-slide-next  {
+        transform: translateZ(0) scale(.9) translateX(10%)  !important;
+        width: 100% !important;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide {
+        transform: translateZ(0) scale(.9) translateX(0) !important;
+        width: 100% !important;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide + .swiper-slide {
+        transform: translateZ(0) scale(.9) translateX(0)  !important;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide + .swiper-slide + .swiper-slide {
+        transform: translateZ(0) scale(.9) translateX(0) !important;
+    }
+}
 </style>

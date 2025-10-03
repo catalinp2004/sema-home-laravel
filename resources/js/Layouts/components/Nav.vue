@@ -29,9 +29,11 @@
                     <span class="mx-2">|</span>
                     <span>EN</span>
                 </div>
-                <button class="navbar-toggler col-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="col-auto">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
             </div>
         </div>
     </nav>
@@ -90,7 +92,9 @@
     }
 
     @media (max-width: 1199px) {
-        
+        .nav-link.active span::after {
+            bottom: -8px;
+        }
     }
 
     @media (min-width: 1200px) {

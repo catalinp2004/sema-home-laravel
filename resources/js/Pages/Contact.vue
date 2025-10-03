@@ -7,7 +7,7 @@
                     <div class="col-1 d-flex justify-content-start position-relative-xs">
                         <TitleDecoration />
                     </div>
-                    <div class="col-10 offset-1">
+                    <div class="col-10 offset-1 offset-xl-0">
                         <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Contact</h2>
                     </div>
                     <div class="col-md-10 offset-md-2 offset-md-1 col-xl-5 offset-xl-1 mb-5 mb-xl-0 mt-4 mt-md-0">

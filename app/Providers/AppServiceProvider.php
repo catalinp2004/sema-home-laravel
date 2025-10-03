@@ -35,5 +35,9 @@ class AppServiceProvider extends ServiceProvider
         // so unique indexes on utf8mb4 columns (e.g., users.email) do not exceed index
         // byte limits (767/1000 bytes depending on engine/version).
         Schema::defaultStringLength(191);
+
+        if (app()->environment('local')) {
+            \URL::forceScheme('https');
+        }
     }
 }

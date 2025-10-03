@@ -3,24 +3,29 @@
         <Head :title="`${floor.name} - ${building.name}`" />
         <div class="large-pad pt-4 pad-bottom position-relative">
             <div class="row gx-5">
-                <div class="col-10 col-lg-11 col-xl-10 offset-xl-1">
-                    <Link :href="route('building.show', building.slug)" class="btn btn-arrow btn-arrow-prev btn-teal snipped mb-5 d-inline-block">
+                <div class="col-10 col-lg-11 offset-xl-0 col-xxl-10 offset-xxl-1">
+                    <Link :href="route('building.show', building.slug)" class="btn btn-arrow btn-arrow-prev btn-teal snipped mb-4 d-inline-block">
                         <span>Înapoi la selecție etaj</span>
                     </Link>
                 </div>
-                <div class="col-2 col-lg-1 d-flex justify-content-start position-relative">
+                <div class="col-2 col-lg-1 d-flex justify-content-end position-relative">
                     <TitleDecoration />
                 </div>
             </div>
-            <div class="row gx-5 mt-5">
-                <div class="col-lg-2 offset-xl-1 d-flex flex-column align-items-start">
-                    <h2 class="tk-obvia fw-normal text-uppercase mb-4">{{ building.name }}<br /><span class="text-teal">{{ floor.name }}</span></h2>
-                    <p class="text-l">Opțiuni de apartamente pentru fiecare stil de viață.</p>
-                    <!-- Rooms filter control -->
-                    <ApartmentFilter v-model="roomsFilter" class="mt-auto" />
+            <div class="row gx-5 mt-md-4 mt-lg-5">
+                <div class="col-md-12 col-lg-3 col-xxl-2 offset-xxl-1 mb-4 mb-md-5 mb-lg-0">
+                    <div class="row">
+                        <div class="col-md-6 col-lg-12 mb-4 mb-md-0 mb-lg-4">
+                            <h2 class="tk-obvia fw-normal text-uppercase mb-md-4">{{ building.name }} <span class="d-none d-sm-inline d-md-none">–</span> <br class="d-inline d-sm-none d-md-inline"/><span class="text-teal">{{ floor.name }}</span></h2>
+                            <p class="text-l mb-0 lh-sm">Opțiuni de apartamente pentru fiecare stil de viață.</p>
+                        </div>
+                        <div class="col-md-6 col-lg-auto mt-md-auto">
+                            <ApartmentFilter v-model="roomsFilter" />
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-lg-10 col-xl-9">
+                <div class="col-lg-9 col-xxl-8">
                     <div class="position-relative" v-if="floor" ref="overlayRef">
                         <img
                             :src="`/images/${floor.floor_plan}-2560.webp`"

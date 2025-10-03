@@ -27,9 +27,18 @@ class ApartmentsController extends Controller
 
         $perPage = (int) $request->query('per_page', 12);
         // Only show available apartments and eager-load floor + building for table columns
+        // Deterministic ordering: building -> floor -> apartment number (numeric)
         $query = Apartment::query()
             ->available()
             ->filterByRooms($rooms)
+            // join floors/buildings to order by their attributes while still selecting apartments.*
+            ->join('floors', 'apartments.floor_id', '=', 'floors.id')
+            ->join('buildings', 'floors.building_id', '=', 'buildings.id')
+            ->orderBy('buildings.name')
+            ->orderBy('floors.level')
+            // apartment.number can be numeric or string; cast to unsigned for numeric ordering
+            ->orderByRaw('CAST(apartments.number AS UNSIGNED)')
+            ->select('apartments.*')
             ->with(['floor.building']);
 
         // Accept building and floor as slugs in query params (slug-only public API).
@@ -47,6 +56,34 @@ class ApartmentsController extends Controller
         }
         $paginator = $query->paginate($perPage)->withQueryString();
 
+        // Starting prices per room category (1..4): min of promo_sale_price or sale_price among available apartments
+        $priceMapRaw = Apartment::query()
+            ->available()
+            ->whereIn('room_count', [1, 2, 3, 4])
+            // only consider apartments that have at least one price defined
+            ->where(function ($q) {
+                $q->whereNotNull('promo_sale_price')->orWhereNotNull('sale_price');
+            })
+            ->selectRaw('room_count, MIN(COALESCE(promo_sale_price, sale_price)) as min_price')
+            ->groupBy('room_count')
+            ->pluck('min_price', 'room_count')
+            ->toArray();
+
+        // Normalize keys (room_count may be stored as decimal/string like '1.0')
+        $priceMap = [];
+        foreach ($priceMapRaw as $k => $v) {
+            $intKey = (string) ((int) $k);
+            $priceMap[$intKey] = $v;
+        }
+
+        // Normalize keys to strings for frontend and values to float
+        $startingPrices = [];
+        foreach ([1,2,3,4] as $rc) {
+            $key = (string) $rc;
+            $val = $priceMap[$key] ?? null;
+            $startingPrices[$key] = $val !== null ? (float) $val : null;
+        }
+
         $items = ApartmentResource::collection($paginator->getCollection())->resolve();
 
         return Inertia::render('Apartments', [
@@ -58,6 +95,7 @@ class ApartmentsController extends Controller
                 'total' => $paginator->total(),
             ],
             'filters' => ['camere' => $rooms],
+            'starting_prices' => $startingPrices,
         ]);
     }
 }
