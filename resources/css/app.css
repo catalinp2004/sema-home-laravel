@@ -273,6 +273,15 @@ h2 {
     color: #ffffff;
 }
 
+.highlight-on-hover img {
+    transition: transform 0.15s ease-in-out;
+}
+
+.highlight-on-hover:hover img,
+.highlight-on-hover:focus img {
+    transform: scale(1.04);
+}
+
 .lang-active {
     color: #28A7B2;
 }

@@ -17,7 +17,9 @@
         </div>
         <div class="d-flex align-items-center">
             <span class="d-inline-block me-3 opacity-50">Un proiect</span>
-            <img src="/images/logo_grey.svg" class="img-fluid" alt="">
+            <a href="https://sema.ro" target="_blank" rel="noopener noreferrer" class="d-inline-block">
+                <img src="/images/logo_grey.svg" class="img-fluid" alt="">
+            </a>
         </div> 
     </footer>
 </template>

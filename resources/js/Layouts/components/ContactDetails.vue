@@ -7,11 +7,11 @@
             <p class="text-m tk-obvia fw-semibold">Contactează-ne</p>
             <a href="tel:+40748108020" class="d-flex align-items-center mb-3" :class="dark ? 'text-white' : 'text-black'">
                 <img src="/images/icon_phone_teal.svg" class="img-fluid me-3" :class="{ 'white': dark }" alt="">
-                <span class="tk-obvia">+40 748 108 020</span>
+                <span class="tk-obvia">+40&nbsp;748&nbsp;10&nbsp;80&nbsp;20</span>
             </a>
             <a href="tel:+40748109070" class="d-flex align-items-center mb-3" :class="dark ? 'text-white' : 'text-black'">
                 <img src="/images/icon_phone_teal.svg" class="img-fluid me-3" :class="{ 'white': dark }" alt="">
-                <span class="tk-obvia">+40 748 109 070</span>
+                <span class="tk-obvia">+40&nbsp;748&nbsp;10&nbsp;90&nbsp;70</span>
             </a>
             <a href="mailto:sales@semahome.ro" class="d-flex align-items-center" :class="dark ? 'text-white' : 'text-black'">
                 <img src="/images/icon_mail_teal.svg" class="img-fluid me-3" :class="{ 'white': dark }" alt="">
@@ -21,14 +21,17 @@
         <div class="d-flex flex-column align-items-center align-items-md-start mt-5" :class="compact ? 'col-lg-12' : 'col-lg-6 mt-lg-0'">
             <p class="text-m fw-medium tk-obvia fw-semibold">Urmărește-ne pe</p>
             <div class="d-flex align-items-center">
-                <a href="#">
-                    <img src="/images/icon_facebook_teal.svg" class="img-fluid" :class="{ 'white': dark }" alt="">
+                <a href="https://www.facebook.com/semahomero" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/icon_facebook_teal.svg" class="img-fluid me-4" :class="{ 'white': dark }" alt="">
                 </a>
-                <a href="#">
-                    <img src="/images/icon_instagram_teal.svg" class="img-fluid mx-4" :class="{ 'white': dark }" alt="">
+                <a href="https://www.instagram.com/semahome.ro/" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/icon_instagram_teal.svg" class="img-fluid me-4" :class="{ 'white': dark }" alt="">
                 </a>
-                <a href="#">
-                    <img src="/images/icon_linkedin_teal.svg" class="img-fluid" :class="{ 'white': dark }" alt="">
+                <a href="https://www.linkedin.com/company/sema-home" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/icon_linkedin_teal.svg" class="img-fluid me-4" :class="{ 'white': dark }" alt="">
+                </a>
+                <a href="https://www.tiktok.com/@sema_home" target="_blank" rel="noopener noreferrer">
+                    <img src="/images/icon_tiktok_teal.svg" class="img-fluid" :class="{ 'white': dark }" alt="">
                 </a>
             </div>
         </div>

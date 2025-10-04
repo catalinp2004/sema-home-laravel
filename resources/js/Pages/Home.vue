@@ -14,7 +14,7 @@
                         <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Despre <span class="text-teal"><br>Sema Home</span></h2>
                     </div>
                     <div class="col-5 offset-2 col-sm-3 offset-sm-0 col-lg-5 text-sm-end mb-5 mb-sm-0">
-                        <a href="https://semaparc.ro/" target="_blank" rel="noopener noreferrer">
+                        <a href="https://semaparc.ro/" target="_blank" rel="noopener noreferrer" class="highlight-on-hover">
                             <img src="/images/part_of_sema_parc.svg" class="img-fluid" alt="part of Sema Parc">
                         </a>
                     </div>

@@ -8,7 +8,14 @@
                     <TitleDecoration />
                 </div>
                 <div class="col-10 col-md-9 col-lg-5 mb-5 mb-lg-0">
-                    <img src="/images/logo_sema_realestate.svg" alt="Logo Sema Real Estate" class="mb-5">
+                    <div class="d-flex flex-column flex-md-row flex-lg-column flex-xl-row justify-content-between align-items-start align-items-md-center align-items-lg-start align-items-xl-center mb-5">
+                        <a href="https://sema.ro" target="_blank" rel="noopener noreferrer" class="highlight-on-hover mb-5 mb-md-0 mb-lg-5 mb-xl-0">
+                            <img src="/images/logo_sema_realestate.svg" alt="Logo Sema Real Estate">
+                        </a>
+                        <a href="https://the-light.ro" target="_blank" rel="noopener noreferrer" class="highlight-on-hover">
+                            <img src="/images/logo_the_light.svg" alt="Logo The Light">
+                        </a>
+                    </div>
                     <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Un Dezvoltator <br class="d-none d-lg-inline" />cu <span class="text-teal">Viziune</span></h2>
                     <p class="mb-5">SEMA Real Estate este un investitor și dezvoltator imobiliar cu capital românesc, cu activitate de peste 20 ani pe piața locală, susținut de o echipă de profesioniști cu o vastă experiență în planificarea, dezvoltarea și gestionarea proiectelor imobiliare de mare anvergură.</p>
                     <h4 class="tk-obvia fw-bold fs-5 mb-4">Misiunea noastră</h4>
