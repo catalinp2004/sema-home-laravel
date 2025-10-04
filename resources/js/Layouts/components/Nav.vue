@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-xl w-100 tk-obvia position-fixed">
+    <nav class="navbar navbar-expand-xl w-100 text-obvia position-fixed">
         <div class="large-pad d-flex align-items-center w-100">
             <div class="row w-100 flex-grow-1 align-items-center">
                 <Link class="navbar-brand col-auto me-auto" :href="route('home')">

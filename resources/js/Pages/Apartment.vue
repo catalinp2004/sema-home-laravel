@@ -11,7 +11,7 @@
             </div>
             <div class="row gx-5">
                 <div class="col-lg-6 col-xxl-6 offset-xxl-1 mb-5">
-                    <h2 class="tk-obvia fw-medium">{{ apartment.title }}</h2>
+                    <h2 class="text-obvia fw-normal">{{ apartment.title }}</h2>
                     <p class="mb-2">
                         <Link :href="route('building.show', building.slug)" class="text-uppercase text-teal fs-6">{{ building.name }}</Link>
                         <span class="d-inline-block mx-3">/</span>
@@ -55,7 +55,7 @@
                 <div class="col-lg-6 col-xxl-4 d-flex flex-column mb-5">
                     <div class="row mb-5">
                         <div class="col-sm-6 col-md-3 offset-md-3 col-lg offset-lg-0 mb-5 mb-sm-0">
-                            <h3 class="text-teal mb-2 tk-obvia fw-semibold fs-2">{{ parseInt(apartment.room_count) === 1 ? '1 cameră' : parseInt(apartment.room_count) + ' camere' }}</h3>
+                            <h3 class="text-teal mb-2 text-obvia fw-medium fs-2">{{ parseInt(apartment.room_count) === 1 ? '1 cameră' : parseInt(apartment.room_count) + ' camere' }}</h3>
                             <p class="mb-0 small">Nr. băi: <span class="fw-bold">{{ apartment.bathroom_count }}</span></p>
                             <p class="mb-0 small" v-if="apartment.balcony_count">{{ apartment.balcony_count === 1 ? 'Balcon: ' : apartment.balcony_count + ' balcoane: ' }} <span class="fw-bold">{{ apartment.balcony_size_sqm }}</span> m<sup>2</sup></p>
                             <p class="mb-0 small" v-if="apartment.terrace_count">{{ apartment.terrace_count === 1 ? 'Terasă: ' : apartment.terrace_count + ' terase: ' }} <span class="fw-bold">{{ apartment.terrace_size_sqm }}</span> m<sup>2</sup></p>
@@ -63,8 +63,8 @@
                         </div>
                         <div class="col-sm-6 col-lg-auto text-start">
                             <p class="mb-1 small lh-sm ">Suprafață utilă</p>
-                            <p class="tk-obvia mb-2">
-                                <span class="text-xl fw-bold">{{ apartment.usable_size_sqm }}</span>
+                            <p class="text-obvia mb-2">
+                                <span class="text-xl fw-medium">{{ apartment.usable_size_sqm }}</span>
                                 <span class="fw-medium text-l text-teal">m<sup>2</sup></span>
                             </p>
                             <p class="mb-0 fs-6 fw-bold">Suprafață totală: <span class="text-teal">{{ apartment.total_size_sqm }}</span> m<sup>2</sup></p>
@@ -74,8 +74,8 @@
                     <p class="mb-0 fs-6">Orientare: <span class="fw-bold">{{ apartment.orientation }}</span></p>
                     <p class="mb-0 fs-6">Clasă de eficiență energetică: <span class="fw-bold">{{ apartment.energy_efficiency_class }}</span></p>
                     <div class="d-flex flex-column flex-sm-row align-items-sm-center w-100 mt-5">
-                        <p class="mb-5 mb-sm-0 text-m tk-obvia fw-semibold">Preț la cerere</p>
-                        <a href="#" class="btn btn-arrow btn-teal tk-obvia snipped ms-auto me-auto me-sm-0 text-uppercase">Cere ofertă</a>
+                        <p class="mb-5 mb-sm-0 text-m text-obvia fw-medium">Preț la cerere</p>
+                        <a href="#" class="btn btn-arrow btn-teal text-obvia snipped ms-auto me-auto me-sm-0 text-uppercase">Cere ofertă</a>
                     </div>
                 </div>
             </div>
@@ -83,13 +83,13 @@
                 <div class="col-xxl-10 offset-xxl-1">
                     <div class="row gx-5">
                         <div v-if="apartment.utility_values?.length" class="col-md-6 col-lg-4 col-xxl-3 mb-5 mb-md-0">
-                            <h4 class="text-teal mb-4 tk-obvia fw-semibold fs-">Utilități</h4>
+                            <h4 class="text-teal mb-4 text-obvia fw-medium fs-">Utilități</h4>
                             <ul class="ap-details-list mb-0">
                                 <li v-for="(value, index) in apartment.utility_values" :key="index">{{ value }}</li>
                             </ul>
                         </div>
                         <div v-if="apartment.facility_values?.length" class="col-md-6 col-lg-4 col-xxl-3">
-                            <h4 class="text-teal mb-4 tk-obvia fw-semibold fs-">Dotări</h4>
+                            <h4 class="text-teal mb-4 text-obvia fw-medium fs-">Dotări</h4>
                             <ul class="ap-details-list mb-0">
                                 <li v-for="(value, index) in apartment.facility_values" :key="index">{{ value }}</li>
                             </ul>
@@ -97,7 +97,7 @@
                         <div class="col-auto ms-auto d-flex flex-column justify-content-center mt-4 mt-lg-0"
                             :class="!(apartment.utility_values?.length || apartment.facility_values?.length) ? 'me-auto align-items-center' : 'me-auto me-lg-0 align-items-center align-items-lg-start'"
                         >
-                            <h4 class="mb-3 tk-obvia fw-semibold fs-5 text-center">Distribuie prin:</h4>
+                            <h4 class="mb-3 text-obvia fw-medium fs-5 text-center">Distribuie prin:</h4>
                             <div class="d-flex align-items-center">
                                 <button type="button" class="btn btn-link p-0 me-3" @click="shareWhatsApp" title="Trimite prin WhatsApp">
                                     <img src="/images/icon_share_whatsapp.svg" class="img-fluid" alt="WhatsApp">
@@ -125,7 +125,7 @@
                         <strong>Solicită o ofertă personalizată,</strong><br />
                         iar unul dintre consultanții noștri îți va răspunde în cel mai scurt timp.
                     </p>
-                    <a href="#" class="btn btn-arrow btn-teal tk-obvia snipped text-uppercase">Cere ofertă</a>
+                    <a href="#" class="btn btn-arrow btn-teal text-obvia snipped text-uppercase">Cere ofertă</a>
                 </div>
             </div>
         </div>

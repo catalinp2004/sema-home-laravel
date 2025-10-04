@@ -21,7 +21,7 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 col-md-9 col-lg-5 mb-4 mb-lg-0">
-                        <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Primul proiect rezidențial <br class="d-none d-xl-inline" />parte integrantă din <span class="text-teal"><br class="d-none d-xl-inline" />Sema Parc</span></h2>
+                        <h2 class="mb-3 mb-sm-4 mb-md-5 text-obvia">Primul proiect rezidențial <br class="d-none d-xl-inline" />parte integrantă din <span class="text-teal"><br class="d-none d-xl-inline" />Sema Parc</span></h2>
                         <p>Totul a pornit dintr-o viziune: transformarea fostei platforme industriale Semănătoarea într-un reper al Bucureștiului modern. Masterplanul Sema Parc conturează un ansamblu urban complex, ce reunește componente deja realizate sau aflate în dezvoltare — clădiri de birouri clasa A, locuințe moderne, restaurante, supermarket și zone de entertainment — alături de funcțiuni ce vor fi adăugate în etapele viitoare: zone de promenadă, spații de retail, terase, hotel, precum și facilități administrative și educaționale. Un ansamblu conceput să îmbine dinamica vieții urbane cu liniștea și confortul pe care le meriți.</p>
                         <p>Sema Home este primul proiect rezidențial al Sema Real Estate și va fi realizat în mai multe faze, fiecare etapă având o dezvoltare progresivă și un impact semnificativ asupra comunității locale.</p>
                     </div>
@@ -40,17 +40,17 @@
                 <div class="row margin-bottom-large" data-speed="1.1">
                     <div class="col-lg-10 offset-lg-1">
                         <div class="bg-dark-blue snipped px-4 py-5 px-md-5">
-                            <h2 class="mb-5 tk-obvia fs-2">Sema Home – Faza 1</h2>
+                            <h2 class="mb-5 text-obvia fs-2">Sema Home – Faza 1</h2>
                             <div class="row">
                                 <div class="col-xl-6">
                                     <div class="row">
                                         <div class="col-sm-6 px-lg-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
-                                            <p class="text-xl d-block mb-0 tk-obvia fw-semibold">301</p>
-                                            <p class="text-l tk-obvia mb-0 fw-semibold">Apartamente cu<br>1/2/3/4 camere</p>
+                                            <p class="text-xl d-block mb-0 text-obvia fw-medium">301</p>
+                                            <p class="text-l text-obvia mb-0 fw-medium">Apartamente cu<br>1/2/3/4 camere</p>
                                         </div>
                                         <div class="col-sm-6 px-lg-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
-                                            <p class="text-xl d-block mb-0 tk-obvia fw-semibold">390</p>
-                                            <p class="text-l tk-obvia mb-0 fw-semibold">Locuri de parcare</p>
+                                            <p class="text-xl d-block mb-0 text-obvia fw-medium">390</p>
+                                            <p class="text-l text-obvia mb-0 fw-medium">Locuri de parcare</p>
                                         </div>
                                     </div>
                                 </div>
@@ -59,21 +59,21 @@
                                         <div class="col-sm-6 d-flex flex-column align-items-start px-lg-5 pe-sm-0 ps-xl-0 mb-5">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_green_spaces.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Spații verzi</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Spații verzi</span>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <img src="/images/icon_tech.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Tehnologii<br> avansate</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Tehnologii<br> avansate</span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 d-flex flex-column align-items-start px-lg-5 pe-sm-0 ps-xl-0">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_fabrics.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Materiale la cele<br> mai înalte standarde</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Materiale la cele<br> mai înalte standarde</span>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <img src="/images/icon_sustainable.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Soluții<br> Sustenabile</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Soluții<br> Sustenabile</span>
                                             </div>
                                         </div>
                                     </div>
@@ -87,7 +87,7 @@
                     <div class="col-10 offset-1 col-md-9 offset-md-2 col-lg-5 offset-lg-1 col-arhitectura">
                         <div class="d-flex flex-column align-items-start flex-md-row align-items-md-center flex-lg-column align-items-lg-start ps-3 ps-sm-2 ps-md-0">
                             <TitleDecoration class="start-0 arch-title-decoration" />
-                            <h2 class="mb-4 mb-md-5 tk-obvia fw-normal">Arhitectură</h2>
+                            <h2 class="mb-4 mb-md-5 text-obvia fw-normal">Arhitectură</h2>
                             <div class="ms-0 ms-md-auto ms-lg-0">
                                 <img src="/images/excellency_stamp.svg" class="img-fluid margin-bottom me-4 me-sm-5 logo-breeam" alt="Breeam Excellency">
                                 <img src="/images/logo_nzeb.svg" class="img-fluid margin-bottom logo-nzeb" alt="Near Zero Energy Building">
@@ -141,7 +141,7 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 offset-2 col-md-9 offset-md-2 col-lg-10 offset-lg-0">
-                        <h2 class="mb-3 mb-sm-4 mb-lg-5 tk-obvia">Design și finisaje <br class="d-none d-lg-inline" /><span class="text-teal">premium</span></h2>
+                        <h2 class="mb-3 mb-sm-4 mb-lg-5 text-obvia">Design și finisaje <br class="d-none d-lg-inline" /><span class="text-teal">premium</span></h2>
                     </div>
                     <div class="col-10 offset-2 col-md-9 offset-md-2 col-lg-5 offset-lg-1 mb-5 mb-lg-0">
                         <img
@@ -170,12 +170,12 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 offset-2 offset-md-2 col-lg-4 offset-lg-0">
-                        <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Puncte de <br class="d-none d-lg-inline" /><span class="text-teal">interes</span></h2>
+                        <h2 class="mb-3 mb-sm-4 mb-md-5 text-obvia">Puncte de <br class="d-none d-lg-inline" /><span class="text-teal">interes</span></h2>
                         <p><strong>Există numeroase opțiuni de shopping și entertainment, dar și educație și sănătate.</strong></p>
                     </div>
                     <div class="col-10 offset-2 col-md-10 offset-md-1 col-md-8 offset-md-2 col-lg-5 offset-lg-1">
                         <p class="mb-5">Amplasarea strategică a proiectului permite accesul facil la 2 magistrale de metrou (M1 si M3), precum și posibilitatea de a ajunge cu ușurință în trei direcții importante ale orașului: spre centru (Piața Victoriei și Piața Unirii), spre zona de nord a orașului (prin Șoseaua Virtuții) și spre Militari (ieșind direct în Bulevardul Iuliu Maniu).</p>
-                        <Link :href="route('location')" class="btn btn-icon btn-teal d-inline-flex align-items-center tk-obvia snipped" alt="">
+                        <Link :href="route('location')" class="btn btn-icon btn-teal d-inline-flex align-items-center text-obvia snipped" alt="">
                             <img src="/images/icon_location.svg" class="img-fluid" alt="">
                             <span class="text-nowrap">Vezi localizare</span>
                         </Link>

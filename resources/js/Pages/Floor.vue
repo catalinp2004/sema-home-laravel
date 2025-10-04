@@ -16,7 +16,7 @@
                 <div class="col-md-12 col-lg-3 col-xxl-2 offset-xxl-1 mb-4 mb-md-5 mb-lg-0">
                     <div class="row">
                         <div class="col-md-6 col-lg-12 mb-4 mb-md-0 mb-lg-4">
-                            <h2 class="tk-obvia fw-normal text-uppercase mb-md-4">{{ building.name }} <span class="d-none d-sm-inline d-md-none">–</span> <br class="d-inline d-sm-none d-md-inline"/><span class="text-teal">{{ floor.name }}</span></h2>
+                            <h2 class="text-obvia fw-normal text-uppercase mb-md-4">{{ building.name }} <span class="d-none d-sm-inline d-md-none">–</span> <br class="d-inline d-sm-none d-md-inline"/><span class="text-teal">{{ floor.name }}</span></h2>
                             <p class="text-l mb-0 lh-sm">Opțiuni de apartamente pentru fiecare stil de viață.</p>
                         </div>
                         <div class="col-md-6 col-lg-auto mt-md-auto">
@@ -71,7 +71,7 @@
                                 :style="labelStyle">
                                 <div class="label-badge text-white text-center px-4 py-2 snipped">
                                     <div class="text-uppercase fs-7">Ap.</div>
-                                    <div class="tk-obvia fw-bold fs-5">{{ formatLabel(hoverApt) }}</div>
+                                    <div class="text-obvia fw-medium fs-5">{{ formatLabel(hoverApt) }}</div>
                                 </div>
                             </div>
                         </transition>
@@ -247,7 +247,6 @@ h2 { white-space: nowrap; font-size: 40px; }
     filter: drop-shadow(0 1px 1px rgba(0,0,0,.08));
 }
 .apt-float-label .small { font-size: 10px; letter-spacing: .06em; opacity: .8; }
-.apt-float-label .fw-bold { font-weight: 700; font-size: 13px; }
 
 /* Fade/slide transition */
 .apt-fade-enter-active, .apt-fade-leave-active {

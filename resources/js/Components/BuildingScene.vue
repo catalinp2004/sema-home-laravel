@@ -52,7 +52,7 @@
             </svg>
             <transition name="floor-label-fade">
                 <div v-if="title" class="floor-label position-absolute text-center text-white snipped px-5 py-2">
-                    <span class="d-block title tk-obvia fw-bold">{{ title }}</span>
+                    <span class="d-block title text-obvia fw-medium">{{ title }}</span>
                     <span class="d-block sub-title">{{ subTitle }}</span>
                 </div>
             </transition>

@@ -1,25 +1,25 @@
 <template>
     <div class="row">
         <div class="col-12 mb-5">
-            <p class="text-m fw-semibold tk-obvia text-center text-md-start">319L Splaiul Independenței,<br :class="{ 'd-none': !compact }"> Sema Parc, Clădirea Paris,<br>lângă intrarea C, parter<br :class="{ 'd-none': !compact }">Sector 6, București, România</p>
+            <p class="text-m fw-medium text-obvia text-center text-md-start">319L Splaiul Independenței,<br :class="{ 'd-none': !compact }"> Sema Parc, Clădirea Paris,<br>lângă intrarea C, parter<br :class="{ 'd-none': !compact }">Sector 6, București, România</p>
         </div>
         <div class="d-flex flex-column align-items-center align-items-md-start" :class="compact ? 'col-lg-12' : 'col-lg-6'">
-            <p class="text-m tk-obvia fw-semibold">Contactează-ne</p>
+            <p class="text-m text-obvia fw-medium">Contactează-ne</p>
             <a href="tel:+40748108020" class="d-flex align-items-center mb-3" :class="dark ? 'text-white' : 'text-black'">
                 <img src="/images/icon_phone_teal.svg" class="img-fluid me-3" :class="{ 'white': dark }" alt="">
-                <span class="tk-obvia">+40&nbsp;748&nbsp;10&nbsp;80&nbsp;20</span>
+                <span class="text-obvia">+40&nbsp;748&nbsp;10&nbsp;80&nbsp;20</span>
             </a>
             <a href="tel:+40748109070" class="d-flex align-items-center mb-3" :class="dark ? 'text-white' : 'text-black'">
                 <img src="/images/icon_phone_teal.svg" class="img-fluid me-3" :class="{ 'white': dark }" alt="">
-                <span class="tk-obvia">+40&nbsp;748&nbsp;10&nbsp;90&nbsp;70</span>
+                <span class="text-obvia">+40&nbsp;748&nbsp;10&nbsp;90&nbsp;70</span>
             </a>
             <a href="mailto:sales@semahome.ro" class="d-flex align-items-center" :class="dark ? 'text-white' : 'text-black'">
                 <img src="/images/icon_mail_teal.svg" class="img-fluid me-3" :class="{ 'white': dark }" alt="">
-                <span class="tk-obvia">sales@semahome.ro</span>
+                <span class="text-obvia">sales@semahome.ro</span>
             </a>
         </div>
         <div class="d-flex flex-column align-items-center align-items-md-start mt-5" :class="compact ? 'col-lg-12' : 'col-lg-6 mt-lg-0'">
-            <p class="text-m fw-medium tk-obvia fw-semibold">Urmărește-ne pe</p>
+            <p class="text-m fw-medium text-obvia fw-medium">Urmărește-ne pe</p>
             <div class="d-flex align-items-center">
                 <a href="https://www.facebook.com/semahomero" target="_blank" rel="noopener noreferrer">
                     <img src="/images/icon_facebook_teal.svg" class="img-fluid me-4" :class="{ 'white': dark }" alt="">

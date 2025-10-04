@@ -10,7 +10,7 @@
                 <div class="col-10">
                     <div class="row">
                         <div class="col-lg-auto">
-                            <h2 class="mb-4 mb-md-5 tk-obvia">Apartamente <span class="text-teal"><br>disponibile</span></h2>
+                            <h2 class="mb-4 mb-md-5 text-obvia">Apartamente <span class="text-teal"><br>disponibile</span></h2>
                         </div>
                         <div class="col-lg offset-lg-1">
                             <p class="mb-0 lh-lg">

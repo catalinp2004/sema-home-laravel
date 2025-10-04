@@ -2,15 +2,15 @@
     <form id="contact-form" action="" method="POST">
         <input type="hidden" name="csrf" value="<?php echo $csrf; ?>">
         <div class="form-group mb-4">
-            <label for="name" class="fw-bolder mb-1 text-uppercase">Nume*</label>
+            <label for="name" class="fw-bold mb-1 text-uppercase">Nume*</label>
             <input type="text" class="form-control snipped" id="name" name="name" placeholder="Numele tău">
         </div>
         <div class="form-group mb-4">
-            <label for="email" class="fw-bolder mb-1 text-uppercase">E-mail*</label>
+            <label for="email" class="fw-bold mb-1 text-uppercase">E-mail*</label>
             <input type="text" class="form-control snipped" id="email" name="email" placeholder="ADRESA@EMAIL.COM">
         </div>
         <div class="form-group mb-4">
-            <label for="phone" class="fw-bolder mb-1 text-uppercase">Telefon*</label>
+            <label for="phone" class="fw-bold mb-1 text-uppercase">Telefon*</label>
             <input type="text" class="form-control snipped" id="phone" name="phone" placeholder="07XX XXX XXX">
         </div>
         <div class="form-group mb-4">
@@ -24,7 +24,7 @@
             </select>
         </div>
         <div class="form-group mb-4">
-            <label for="message" class="fw-bolder mb-1 text-uppercase">Mesajul tău</label>
+            <label for="message" class="fw-bold mb-1 text-uppercase">Mesajul tău</label>
             <textarea class="form-control snipped" id="message" name="message" rows="6" placeholder="SCRIE AICI MESAJUL TĂU (Opțional)"></textarea>
         </div>
         <div class="form-check d-flex justify-content-start w-100 mb-3">
@@ -32,7 +32,7 @@
             <label class="form-check-label ms-2" for="agree">Sunt de acord cu <a href="#" class="text-white fs-6">Termenii de confidențialitate</a></label>
         </div>
         <p class="mb-5 text-start mx-auto recaptcha-terms fs-7"><small>Acest site este protejat de reCAPTCHA și se aplică <a href="https://policies.google.com/privacy?hl=ro" target="_blank" rel="noopener" class="fs-7 text-white fw-bold">Politica de confidențialitate</a> și <a href="https://policies.google.com/terms?hl=ro" target="_blank" rel="noopener" class="fs-7 text-white fw-bold">Termenii și condițiile</a> Google.</small></p>
-        <button type="submit" class="btn btn-arrow btn-teal snipped d-flex align-items-center mx-auto tk-obvia text-nowrap">Trimite cererea</button>
+        <button type="submit" class="btn btn-arrow btn-teal snipped d-flex align-items-center mx-auto text-obvia text-nowrap">Trimite cererea</button>
         <div class="col-12 text-center mt-4" id="result"></div>
     </form>
 </template>

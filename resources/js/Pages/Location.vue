@@ -8,7 +8,7 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 col-md-9 col-lg-4">
-                        <h2 class="mb-3 mb-sm-4 mb-lg-5 tk-obvia">Puncte de <br class="d-none d-lg-inline" /><span class="text-teal">interes</span></h2>
+                        <h2 class="mb-3 mb-sm-4 mb-lg-5 text-obvia">Puncte de <br class="d-none d-lg-inline" /><span class="text-teal">interes</span></h2>
                         <p><strong>Există numeroase opțiuni de shopping și entertainment, dar și educație și sănătate.</strong></p>
                     </div>
                     <div class="col-10 offset-2 col-md-9 offset-md-2 col-lg-5 offset-lg-1">
@@ -53,7 +53,7 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 col-md-9 col-lg-5 col-xl-4">
-                        <h2 class="mb-3 mb-sm-4 mb-lg-5 tk-obvia">Accesibilitate</h2>
+                        <h2 class="mb-3 mb-sm-4 mb-lg-5 text-obvia">Accesibilitate</h2>
                         <p><strong>Sema Home se află amplasat în interiorul Sema Parc, la distanță de zgomotul traficului și al vieții agitate din capitală.</strong></p>
                         <p class="mb-0">Amplasarea strategică a proiectului permite accesul facil la 2 magistrale de metrou (M1 si M3), precum și posibilitatea de a ajunge cu ușurință în trei direcții importante ale orașului: spre centru (Piața Victoriei și Piața Unirii), spre zona de nord a orașului (prin Șoseaua Virtuții) și spre Militari (ieșind direct în Bulevardul Iuliu Maniu).</p>
                     </div>
@@ -72,7 +72,7 @@
                                             <div class="col-12 col-sm-4 mb-2 mb-sm-0">
                                                 <div class="text-sm-end">
                                                     <span class="me-2">→</span>
-                                                    <span class="fs-6 fw-semibold">{{ item.label }}</span>
+                                                    <span class="fs-6 fw-medium">{{ item.label }}</span>
                                                 </div>
                                             </div>
                                             <div class="col-5 col-sm-3 col-lg-3 position-relative time-col">

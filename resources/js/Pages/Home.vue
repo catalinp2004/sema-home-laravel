@@ -11,7 +11,7 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 col-sm-7 col-lg-5">
-                        <h2 class="mb-3 mb-sm-4 mb-md-5 tk-obvia">Despre <span class="text-teal"><br>Sema Home</span></h2>
+                        <h2 class="mb-3 mb-sm-4 mb-md-5 text-obvia">Despre <span class="text-teal"><br>Sema Home</span></h2>
                     </div>
                     <div class="col-5 offset-2 col-sm-3 offset-sm-0 col-lg-5 text-sm-end mb-5 mb-sm-0">
                         <a href="https://semaparc.ro/" target="_blank" rel="noopener noreferrer" class="highlight-on-hover">
@@ -26,7 +26,7 @@
                             <span class="d-block">Alegerea firească în orașul tău</span>
                         </h3>
                         <p class="mb-5">La Sema Home, fiecare zi înseamnă mai mult decât o simplă locuință. E locul unde siguranța, confortul și armonia se întâlnesc pentru a-ți crea un stil de viață la care ai visat dintotdeauna.</p>
-                        <Link :href="route('project')" class="btn btn-arrow btn-teal d-flex align-items-center justify-content-start tk-obvia snipped">Despre proiect</Link>
+                        <Link :href="route('project')" class="btn btn-arrow btn-teal d-flex align-items-center justify-content-start text-obvia snipped">Despre proiect</Link>
                     </div>
                     <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2 col-lg-5 offset-lg-0 z-2 image-overlap">
                         <img
@@ -49,7 +49,7 @@
                 <div class="bg-dark-blue snipped position-relative margin-bottom-large pb-5">
                     <div class="row gx-5">
                         <div class="col-xl-5 offset-xl-1 mt-md-3 mt-lg-5 px-5 px-xl-0">
-                            <h2 class="my-5 tk-obvia">Sema Home<br> Faza 1</h2>
+                            <h2 class="my-5 text-obvia">Sema Home<br> Faza 1</h2>
                             <p class="my-5">Prima fază a proiectului aduce un imobil modern cu regim 2SP11, ce va găzdui 301 apartamente și 390 de locuri de parcare. Toate locuințele sunt gândite pentru confortul de zi cu zi, oferind spații de depozitare, design contemporan și un nivel ridicat de eficiență energetică.</p>
                             <p class="mb-5">Tipologiile sunt variate - de la apartamente practice cu o cameră, la apartamente cu 2, 3 sau 4 camere – pentru a răspunde perfect fiecărui stil de viață. Fiecare unitate este dotată cu tehnologii inteligente, iar materialele folosite vor respecta cele mai înalte standarde de calitate și sustenabilitate</p>
                             <p class="mb-3 mb-lg-4">Locatarii vor avea acces la facilități comune de înaltă calitate, inclusiv spații verzi și zone de relaxare, precum și la zonele de alimentație publică și servicii din cadrul Sema Parc.</p>
@@ -61,12 +61,12 @@
                                 <div class="col-xl-6">
                                     <div class="row">
                                         <div class="col-sm-6 px-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
-                                            <p class="text-xl d-block mb-0 tk-obvia fw-semibold">301</p>
-                                            <p class="text-l tk-obvia fw-semibold">Apartamente cu<br>1/2/3/4 camere</p>
+                                            <p class="text-xl d-block mb-0 text-obvia fw-medium">301</p>
+                                            <p class="text-l text-obvia fw-medium">Apartamente cu<br>1/2/3/4 camere</p>
                                         </div>
                                         <div class="col-sm-6 px-5 pe-sm-0 ps-xl-0 mb-5 mb-xl-0">
-                                            <p class="text-xl d-block mb-0 tk-obvia fw-semibold">390</p>
-                                            <p class="text-l tk-obvia fw-semibold">Locuri de parcare</p>
+                                            <p class="text-xl d-block mb-0 text-obvia fw-medium">390</p>
+                                            <p class="text-l text-obvia fw-medium">Locuri de parcare</p>
                                         </div>
                                     </div>
                                 </div>
@@ -75,21 +75,21 @@
                                         <div class="col-sm-6 d-flex flex-column align-items-start px-5 pe-sm-0 ps-xl-0 mb-5">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_green_spaces.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Spații verzi</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Spații verzi</span>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <img src="/images/icon_tech.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Tehnologii<br> avansate</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Tehnologii<br> avansate</span>
                                             </div>
                                         </div>
                                         <div class="col-sm-6 d-flex flex-column align-items-start px-5 pe-sm-0 ps-xl-0">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_fabrics.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Materiale la cele<br> mai înalte standarde</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Materiale la cele<br> mai înalte standarde</span>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <img src="/images/icon_sustainable.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Soluții<br> Sustenabile</span>
+                                                <span class="text-nowrap text-obvia fw-medium">Soluții<br> Sustenabile</span>
                                             </div>
                                         </div>
                                     </div>
@@ -97,7 +97,7 @@
                             </div>
                         </div>
                         <div class="col-10 offset-1 d-flex justify-content-center align-items-center">
-                            <Link :href="route('project')" class="btn btn-arrow btn-teal d-flex align-items-center tk-obvia snipped">Vezi detalii</Link>
+                            <Link :href="route('project')" class="btn btn-arrow btn-teal d-flex align-items-center text-obvia snipped">Vezi detalii</Link>
                         </div>
                     </div>
                 </div>
@@ -106,10 +106,10 @@
                         <TitleDecoration />
                     </div>
                     <div class="col-10 col-lg-6 col-xl-5 mb-5 d-flex flex-column align-items-start">
-                        <h2 class="mb-4 mb-lg-5 tk-obvia text-teal"><span class="text-black">Sema Home<br></span> Faza 2</h2>
+                        <h2 class="mb-4 mb-lg-5 text-obvia text-teal"><span class="text-black">Sema Home<br></span> Faza 2</h2>
                         <p class="mb-4 mb-lg-5">Proiectul va continua cu construcția a încă doua blocuri 2SP11, completand proiectul cu alte 394 de apartamente si 516 locuri de parcare. Această etapă va aduce un plus de diversitate în tipologia locuințelor îmbunătățind infrastructura zonei.</p>
                         <p class="mb-5">Se va pune un accent deosebit pe integrarea armonioasă a noilor clădiri în peisajul existent al parcului existent, oferind un mediu plăcut și funcțional atât pentru cei care locuiesc acolo, cât și pentru cei care lucrează în apropiere.</p>
-                        <Link :href="route('location')" class="btn btn-icon btn-teal d-flex align-items-center tk-obvia snipped" alt="">
+                        <Link :href="route('location')" class="btn btn-icon btn-teal d-flex align-items-center text-obvia snipped" alt="">
                             <img src="/images/icon_location.svg" class="img-fluid" alt="">
                             <span class="text-nowrap">Vezi localizare</span>
                         </Link>
@@ -180,7 +180,7 @@
         </div>
 
     <div class="d-flex justify-content-center margin-bottom-large">
-        <button class="btn btn-icon btn-teal d-flex align-items-center tk-obvia snipped" alt="" @click="openLightbox(lightboxItems[0], 0)">
+        <button class="btn btn-icon btn-teal d-flex align-items-center text-obvia snipped" alt="" @click="openLightbox(lightboxItems[0], 0)">
             <img src="/images/icon_click.svg" class="img-fluid" alt="">
             <span class="text-nowrap text-uppercase">Vezi galeria</span>
         </button>
