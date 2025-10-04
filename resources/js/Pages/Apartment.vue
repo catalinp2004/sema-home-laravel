@@ -26,13 +26,13 @@
                             :spaceBetween="0"
                             :loop="true"
                             :speed="800"
-                            :grabCursor="true"
                             :autoplay="{
-                                delay: 6000,
+                                delay: 8000,
                                 disableOnInteraction: true,
+                                pauseOnMouseEnter: true,
                             }"
                             :lazy="true">
-                            <swiper-slide v-for="image in apartment.images" :key="image.id" class="swiper-slide">
+                            <swiper-slide v-for="(image, i) in apartment.images" :key="image.id" class="swiper-slide">
                                 <img
                                     :src="image.width_560_url"
                                     :srcset="
@@ -45,6 +45,7 @@
                                     :alt="`Sema Home interior rendering ${image.title}`"
                                     class="img-fluid"
                                     loading="lazy"
+                                    @click="openLightbox(lightboxItems[i])"
                                 />
                             </swiper-slide>
                         </swiper-container>
@@ -128,6 +129,15 @@
                 </div>
             </div>
         </div>
+        <Teleport to="body">
+            <silent-box
+                ref="silentbox"
+                :gallery="lightboxItems"
+                :lazy-loading="true"
+                :preview-count="lightboxItems.length"
+                class="silentbox-hidden-activators">
+            </silent-box>
+        </Teleport>
         <div class="bg-teal text-white" :class="['copy-toast', copySuccess ? 'show' : '']" role="status" aria-live="polite">
             <span class="check">✓</span> Link copiat
         </div>
@@ -150,7 +160,6 @@
     // computed-like helper: escape HTML and convert newlines to <br>
     import { computed } from 'vue';
     import { ref } from 'vue';
-    import { usePage } from '@inertiajs/vue3';
 
     const formattedDescription = computed(() => {
         const text = props.apartment?.description || '';
@@ -164,6 +173,19 @@
         // Convert CRLF and LF to <br>
         return escaped.replace(/\r\n|\r|\n/g, '<br>');
     });
+
+    const lightboxItems = computed(() => {
+        return props.apartment?.images?.map(image => ({
+            src: image.url,
+            srcSet: [`${image.width_320_url} 320w`, `${image.width_560_url} 560w`, `${image.url} 2560w`],
+            description: image.title || '',
+        })) || [];
+    });
+
+    const silentbox = ref(null);
+    const openLightbox = (item, index = 0) => {
+        silentbox.value.openOverlay(item, index)
+    }
 
     // Share URLs and helpers
     const pageUrl = computed(() => {
@@ -250,5 +272,9 @@ h2 { line-height: 1.125; }
     display: inline-block;
     margin-right: 8px;
     font-weight: 700;
+}
+
+@media (max-width: 575px) {
+    h2 { font-size: 1.75rem; }    
 }
 </style>

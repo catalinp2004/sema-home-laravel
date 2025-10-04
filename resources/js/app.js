@@ -2,6 +2,7 @@
 import '../css/bootstrap.css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import 'vue-silentbox/dist/style.css';
 import '../css/app.css';
 
 // Import project bootstrap helpers (axios, csrf, etc.)
@@ -11,6 +12,7 @@ import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import { createApp, h } from 'vue';
 import { ZiggyVue } from '../../vendor/tightenco/ziggy';
+import VueSilentbox from 'vue-silentbox';
 
 const appName = import.meta.env.VITE_APP_NAME || 'Laravel';
 
@@ -25,6 +27,7 @@ createInertiaApp({
         return createApp({ render: () => h(App, props) })
             .use(plugin)
             .use(ZiggyVue)
+            .use(VueSilentbox)
             .mount(el);
     },
     progress: {

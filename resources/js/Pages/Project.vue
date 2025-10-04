@@ -125,6 +125,7 @@
                                         sizes="100vw"
                                         :alt="`Sema Home rendering ${n}`"
                                         class="snipped"
+                                        @click="openLightbox(lightboxItems[n - 1])"
                                     />
                                 </swiper-slide>
                             </swiper-container>
@@ -182,16 +183,41 @@
                 </div>
             </div>
         </div>
+
+        <Teleport to="body">
+        <silent-box
+                ref="silentbox"
+                :gallery="lightboxItems"
+                :lazy-loading="true"
+                :preview-count="lightboxItems.length"
+                class="silentbox-hidden-activators">
+            </silent-box>
+        </Teleport>
     </AppLayout>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
 import AppLayout from '@/Layouts/AppLayout.vue';
 import { Head, Link } from '@inertiajs/vue3';
 import { register } from 'swiper/element/bundle';
 import TitleDecoration from '@/Components/TitleDecoration.vue';
 
 register();
+
+const lightboxItems = computed(() => {
+    const items = [];
+    for (let i = 1; i <= 5; i++) {
+        items.push({
+            src: `/images/despre_proiect_swiper_${i}-2048.webp`,
+        });
+    }
+    return items;
+});
+const silentbox = ref(null);
+const openLightbox = (item, index = 0) => {
+    silentbox.value.openOverlay(item, index)
+}
 
 </script>
 

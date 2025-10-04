@@ -168,7 +168,9 @@
                         sizes="100vw"
                         :alt="`Sema Home interior rendering ${n}`"
                         class="snipped"
+                        @click="openLightbox(lightboxItems[n - 1])"
                     />
+                    <img src="/images/open_gallery.svg" class="img-fluid position-absolute start-50 bottom-0 translate-middle icon" alt="View larger" />
                 </swiper-slide>
 
             </swiper-container>
@@ -177,17 +179,28 @@
             <div class="swiper-button-next"><!-- --></div>
         </div>
 
-    <!-- <div class="d-flex justify-content-center margin-bottom-large">
-        <a href="#" class="btn btn-icon btn-teal d-flex align-items-center tk-obvia" alt="">
+    <div class="d-flex justify-content-center margin-bottom-large">
+        <button class="btn btn-icon btn-teal d-flex align-items-center tk-obvia snipped" alt="" @click="openLightbox(lightboxItems[0], 0)">
             <img src="/images/icon_click.svg" class="img-fluid" alt="">
-            <span class="text-nowrap">Vezi galeria</span>
-        </a>
-    </div> -->
+            <span class="text-nowrap text-uppercase">Vezi galeria</span>
+        </button>
+    </div>
+
+    <Teleport to="body">
+        <silent-box
+            ref="silentbox"
+            :gallery="lightboxItems"
+            :lazy-loading="true"
+            :preview-count="lightboxItems.length"
+            class="silentbox-hidden-activators">
+        </silent-box>
+    </Teleport>
 
     </AppLayout>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue';
 import { Head, Link } from '@inertiajs/vue3';
 import { register } from 'swiper/element/bundle';
 import AppLayout from '@/Layouts/AppLayout.vue';
@@ -200,6 +213,20 @@ const props = defineProps({
 });
 
 register();
+
+const lightboxItems = computed(() => {
+    const items = [];
+    for (let i = 1; i <= 8; i++) {
+        items.push({
+            src: `/images/home_swiper_${i}-2048.webp`,
+        });
+    }
+    return items;
+});
+const silentbox = ref(null);
+const openLightbox = (item, index = 0) => {
+    silentbox.value.openOverlay(item, index)
+}
 
 </script>
 
@@ -222,11 +249,20 @@ register();
     overflow: hidden;
 }
 
-.slider-home .swiper-slide img {
+.slider-home .swiper-slide img:not(.icon) {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: center;
+}
+
+img.icon {
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.slider-home .swiper-slide-next + .swiper-slide img.icon {
+    opacity: 1;
 }
 
 .slider-home .swiper-slide-active {
@@ -270,6 +306,19 @@ register();
     .slider-home .swiper-slide {
         transform: translateZ(0) scale(.8) !important;
     }
+
+    img.icon {
+        width: 2rem;
+    }
+
+    .slider-home .swiper-slide-next + .swiper-slide img.icon {
+        opacity: 0;
+    }
+
+    .slider-home .swiper-slide-next img.icon {
+        opacity: 1;
+    }
+
     .slider-home .swiper-slide-active {
         transform: translateZ(0) scale(.8) translateX(-12.4%) !important;
     }
@@ -299,6 +348,19 @@ register();
         height: auto;
         max-height: none;
     }
+
+    img.icon {
+        width: 1.5rem;
+    }
+
+    .slider-home .swiper-slide-next img.icon {
+        opacity: 0;
+    }
+
+    .slider-home .swiper-slide-active img.icon {
+        opacity: 1;
+    }
+
     .slider-home .swiper-slide-prev {
         transform: translateZ(0) scale(.9) translateX(12.5%) !important;
     }
