@@ -17,7 +17,7 @@
             <label for="apartment_type" class="fw-bold mb-1 text-uppercase">Mă interesează*</label>
             <select id="apartment_type" class="form-select snipped" name="apartment_type">
                 <option selected disabled hidden>Selectează tipul apartamentului</option>
-                <option value="Studio">Studio</option>
+                <option value="1 cameră">1 cameră</option>
                 <option value="2 camere">2 camere</option>
                 <option value="3 camere">3 camere</option>
                 <option value="4 camere">4 camere</option>

@@ -59,7 +59,7 @@
                                         <div class="col-sm-6 d-flex flex-column align-items-start px-lg-5 pe-sm-0 ps-xl-0 mb-5">
                                             <div class="d-flex align-items-center mb-5">
                                                 <img src="/images/icon_green_spaces.svg" class="img-fluid me-3" alt="">
-                                                <span class="text-nowrap tk-obvia fw-semibold">Spații verzi și<br> locuri de joacă</span>
+                                                <span class="text-nowrap tk-obvia fw-semibold">Spații verzi</span>
                                             </div>
                                             <div class="d-flex align-items-center">
                                                 <img src="/images/icon_tech.svg" class="img-fluid me-3" alt="">
